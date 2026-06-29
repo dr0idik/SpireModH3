@@ -56,7 +56,9 @@
 		"config/spire/creatures/spire_lvl7.json",
 		"config/spire/creatures/spire_lvl7up.json",
 		"config/spire/creatures/spire_lvl8.json",
-		"config/spire/creatures/spire_cmd.json"
+		"config/spire/creatures/spire_cmd.json",
+
+		"config/spire/creatures/dreadSkipper.json"
 	],
 	"heroClasses" : [
 		"config/spire/classes/oneiroguard.json",
