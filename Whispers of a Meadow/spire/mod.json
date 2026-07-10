@@ -115,7 +115,8 @@
 		"config/spire/spells/intervention.json",
 		"config/spire/spells/deepFrost.json",
 		"config/spire/spells/vigour.json",
-		"config/spire/spells/vigourHelper.json"
+		"config/spire/spells/vigourHelper.json",
+		"config/spire/spells/dreadSkipperBless.json"
 	],
 	"battlefields" : [
 		"config/spire/terrain/battlefields/battlefields.json"

@@ -1,59 +1,82 @@
 {
-	"mdtDreadSkipper" : {
-		"name" : {
-			"singular" : "Dread Skipper",
-			"plural" : "Dread Skippers"
+	"dreadSkipper": {
+		"name": {
+			"singular": "Dread Skipper",
+			"plural": "Dread Skippers"
 		},
-		"faction" : "neutral",
-		"level" : 3,
-		"cost" : {
-			"gold" : 240
+		"faction": "neutral",
+		"level": 3,
+		"cost": {
+			"gold": 240
 		},
-		"speed" : 6,
-		"hitPoints" : 25,
-		"attack" : 8,
-		"defense" : 8,
-		"damage" : {
-			"min" : 4,
-			"max" : 5
+		"speed": 6,
+		"hitPoints": 25,
+		"attack": 8,
+		"defense": 8,
+		"damage": {
+			"min": 4,
+			"max": 5
 		},
-		"fightValue" : 311,
-		"aiValue" : 311,
-		"advMapAmount" : {
-			"min" : 12,
-			"max" : 25
+		"fightValue": 311,
+		"aiValue": 311,
+		"advMapAmount": {
+			"min": 12,
+			"max": 25
 		},
-		"growth" : 7,
-		"hasDoubleWeek" : true,
-		"abilities" : {
-			"undead" : {
-				"type" : "UNDEAD"
-			},
-			"canSorrow" : {
-				"type" : "SPELL_BEFORE_ATTACK",
-				"subtype" : "sorrow",
-				"val" : 20,
-				"addInfo" : [
+		"growth": 7,
+		"hasDoubleWeek": true,
+		"abilities": {
+			// "undead" : {
+			// 	"type" : "UNDEAD"
+			// },
+			"canSorrow": {
+				"type": "SPELL_BEFORE_ATTACK",
+				"subtype": "sorrow",
+				"val": 20,
+				"addInfo": [
 					0,
 					2
 				]
 			},
-			"sorrowPower" : {
-				"type" : "CREATURE_SPELL_POWER",
-				"val" : 300 //spell power = 3
+			"sorrowPower": {
+				"type": "CREATURE_SPELL_POWER",
+				"val": 300 //spell power = 3
 			},
-			"sorrowLenght" : {
-				"type" : "CREATURE_ENCHANT_POWER",
-				"val" : 5 //spell duration =5
+			"sorrowLenght": {
+				"type": "CREATURE_ENCHANT_POWER",
+				"val": 5 //spell duration =5
+			},
+			"bless": {
+				"type": "OPENING_BATTLE_SPELL",
+				"subtype": "dreadSkipperBless",
+				"val": 3,
+				//"addInfo" : 3,
+				"propagator": "HERO",
+				"description": "{Bless}\nDread Skippers cast Bless spell at the beginning of the battle",
+				"hidden": true
+				//"icon" : "icons/e_prayer.png"
+				// "limiters" : [
+				// 	{
+				// 		"type" : "CREATURE_TYPE_LIMITER",
+				// 		"creature" : "dreadSkipper",
+				// 		"includeUpgrades" : true
+				// 	}
+				// ]
 			}
+			// "bless" : {
+			// 	"type" : "ENCHANTED",
+			// 	"subtype" : "bless",
+			// 	"val" : 3,
+			// 	"description" : "{Self-dispelling}\nRecovers from negative effects in one round of combat."
+			// },
 		},
-		"stackExperience" : [
+		"stackExperience": [
 			{
-				"bonus" : {
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "attack"
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
 				},
-				"values" : [
+				"values": [
 					1,
 					1,
 					2,
@@ -67,11 +90,11 @@
 				]
 			},
 			{
-				"bonus" : {
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "defence"
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
 				},
-				"values" : [
+				"values": [
 					1,
 					1,
 					2,
@@ -85,11 +108,11 @@
 				]
 			},
 			{
-				"bonus" : {
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageBoth"
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageBoth"
 				},
-				"values" : [
+				"values": [
 					0,
 					1,
 					1,
@@ -103,11 +126,11 @@
 				]
 			},
 			{
-				"bonus" : {
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
+				"bonus": {
+					"valueType": "PERCENT_TO_BASE",
+					"type": "STACK_HEALTH"
 				},
-				"values" : [
+				"values": [
 					5,
 					10,
 					15,
@@ -121,10 +144,10 @@
 				]
 			},
 			{
-				"bonus" : {
-					"type" : "STACKS_SPEED"
+				"bonus": {
+					"type": "STACKS_SPEED"
 				},
-				"values" : [
+				"values": [
 					0,
 					0,
 					0,
@@ -138,10 +161,10 @@
 				]
 			},
 			{
-				"bonus" : {
-					"type" : "ADDITIONAL_RETALIATION"
+				"bonus": {
+					"type": "ADDITIONAL_RETALIATION"
 				},
-				"values" : [
+				"values": [
 					0,
 					0,
 					0,
@@ -155,10 +178,10 @@
 				]
 			},
 			{
-				"bonus" : {
-					"type" : "ADDITIONAL_ATTACK"
+				"bonus": {
+					"type": "ADDITIONAL_ATTACK"
 				},
-				"values" : [
+				"values": [
 					0,
 					0,
 					0,
@@ -172,24 +195,24 @@
 				]
 			}
 		],
-		"graphics" : {
-			"iconSmall" : "spire/creatures/icon/dskipperS.png",
-			"iconLarge" : "spire/creatures/icon/dskipperB.png",
-			"map" : "spire/creatures/adventure/dskippermap.def",
-			"animation" : "spire/creatures/battle/CSkipper.def",
-			"animationTime" : {
-				"walk" : 1,
-				"attack" : 1,
-				"idle" : 10
+		"graphics": {
+			"iconSmall": "spire/creatures/icon/dskipperS.png",
+			"iconLarge": "spire/creatures/icon/dskipperB.png",
+			"map": "spire/creatures/adventure/dskippermap.def",
+			"animation": "spire/creatures/battle/CSkipper.def",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
 			},
-			"timeBetweenFidgets" : 1
+			"timeBetweenFidgets": 1
 		},
-		"sound" : {
-			"attack" : "spire/creatures/dreadSkipper/DRSKATTK.wav",
-			"defend" : "spire/creatures/dreadSkipper/DRSKDFND.wav",
-			"killed" : "spire/creatures/dreadSkipper/DRSKDEAD.wav",
-			"move" : "spire/creatures/dreadSkipper/DRSKMOVE.wav",
-			"wince" : "spire/creatures/dreadSkipper/DRSKWNCE.wav"
+		"sound": {
+			"attack": "spire/creatures/dreadSkipper/DRSKATTK.wav",
+			"defend": "spire/creatures/dreadSkipper/DRSKDFND.wav",
+			"killed": "spire/creatures/dreadSkipper/DRSKDEAD.wav",
+			"move": "spire/creatures/dreadSkipper/DRSKMOVE.wav",
+			"wince": "spire/creatures/dreadSkipper/DRSKWNCE.wav"
 		}
 	}
 }

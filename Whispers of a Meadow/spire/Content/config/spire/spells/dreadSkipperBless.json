@@ -1,0 +1,93 @@
+{
+    "dreadSkipperBless": {
+        "animation": {
+            "affect": [
+                "C01SPW"
+            ]
+        },
+        "counters": {
+            "spell.curse": true
+        },
+        "flags": {
+            "positive": true
+        },
+        "defaultGainChance": 0,
+        "gainChance": {},
+        "index": 41,
+        "level": 1,
+        "levels": {
+            "base": {
+                "cost": 5,
+                "description": "{Bless}\n\nCauses the selected unit to inflict maximum damage in combat.\n",
+                "effects": {
+                    "alwaysMaximumDamage": {
+                        "duration": "N_TURNS",
+                        "type": "ALWAYS_MAXIMUM_DAMAGE",
+                        "val": 0,
+                        "valueType": "INDEPENDENT_MAX"
+                    }
+                },
+                "power": 0,
+                "range": "0",
+                "targetModifier": {
+                    "smart": true
+                }
+            },
+            "none": {
+                "cost": 5,
+                "description": "{Bless}\n\nCauses the selected unit to inflict maximum damage in combat.\n",
+                "effects": {
+                    "alwaysMaximumDamage": {
+                        "duration": "N_TURNS",
+                        "type": "ALWAYS_MAXIMUM_DAMAGE",
+                        "val": 0,
+                        "valueType": "INDEPENDENT_MAX",
+                    }
+                }
+            },
+            "basic": {
+                "cost": 4,
+                "description": "{Basic Bless}\n\nCauses the selected unit to inflict maximum damage in combat.\n",
+                "power": 0
+            },
+            "advanced": {
+                "cost": 4,
+                "description": "{Advanced Bless}\n\nCauses the selected unit to inflict greater than their normal maximum damage in combat.\n",
+                "effects": {
+                    "alwaysMaximumDamage": {
+                        "val": 1
+                    }
+                },
+                "power": 1
+            },
+            "expert": {
+                "cost": 4,
+                "description": "{Expert Bless}\n\nCauses all friendly units to inflict greater than their normal maximum damage in combat.\n",
+                "effects": {
+                    "alwaysMaximumDamage": {
+                        "val": 1
+                    }
+                },
+                "power": 1,
+                "range": "X"
+            },
+        },
+        "name": "Dread Skipper Bless",
+        "power": 0,
+        "school": {
+        },
+        "sounds": {
+            "cast": "BLESS"
+        },
+        "targetCondition": {
+            "noneOf": {
+                "bonus.SIEGE_WEAPON": "absolute"
+            },
+            "anyOf": {
+                "creature.dreadSkipper" : "absolute"
+            }
+        },
+        "targetType": "CREATURE",
+        "type": "combat"
+    }
+}
