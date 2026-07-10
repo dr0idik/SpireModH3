@@ -62,13 +62,12 @@
 				// 		"includeUpgrades" : true
 				// 	}
 				// ]
+			},
+			"immuneToWater" : {
+				"subtype" : "spellSchool.water",
+				// TODO: use spell immutity for every negative water spell (?)
+				"type" : "SPELL_SCHOOL_IMMUNITY"
 			}
-			// "bless" : {
-			// 	"type" : "ENCHANTED",
-			// 	"subtype" : "bless",
-			// 	"val" : 3,
-			// 	"description" : "{Self-dispelling}\nRecovers from negative effects in one round of combat."
-			// },
 		},
 		"stackExperience": [
 			{
