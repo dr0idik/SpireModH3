@@ -13,7 +13,6 @@
         },
         "defaultGainChance": 0,
         "gainChance": {},
-        "index": 41,
         "level": 1,
         "levels": {
             "base": {
@@ -35,15 +34,7 @@
             },
             "none": {
                 "cost": 5,
-                "description": "{Bless}\n\nCauses the selected unit to inflict maximum damage in combat.\n",
-                "effects": {
-                    "alwaysMaximumDamage": {
-                        "duration": "N_TURNS",
-                        "type": "ALWAYS_MAXIMUM_DAMAGE",
-                        "val": 0,
-                        "valueType": "INDEPENDENT_MAX",
-                    }
-                }
+                "description": "{Bless}\n\nCauses the selected unit to inflict maximum damage in combat.\n"
             },
             "basic": {
                 "cost": 4,
