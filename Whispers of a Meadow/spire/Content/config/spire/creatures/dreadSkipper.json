@@ -26,9 +26,9 @@
 		"growth": 7,
 		"hasDoubleWeek": true,
 		"abilities": {
-			// "undead" : {
-			// 	"type" : "UNDEAD"
-			// },
+			"undead" : {
+				"type" : "UNDEAD"
+			},
 			"canSorrow": {
 				"type": "SPELL_BEFORE_ATTACK",
 				"subtype": "sorrow",
