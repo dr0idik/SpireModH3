@@ -54,7 +54,6 @@
 				"propagator": "HERO",
 				"description": "{Bless}\nDread Skippers cast Bless spell at the beginning of the battle",
 				"hidden": true
-				//"icon" : "icons/e_prayer.png"
 				// "limiters" : [
 				// 	{
 				// 		"type" : "CREATURE_TYPE_LIMITER",
@@ -63,9 +62,10 @@
 				// 	}
 				// ]
 			},
+			// TODO: Add another ability for only Bless description (?)
 			"immuneToWater" : {
 				"subtype" : "spellSchool.water",
-				// TODO: use spell immutity for every negative water spell (?)
+				// TODO: use spell immunity for every negative water spell (?)
 				"type" : "SPELL_SCHOOL_IMMUNITY"
 			}
 		},

@@ -71,9 +71,6 @@
             "cast": "BLESS"
         },
         "targetCondition": {
-            "noneOf": {
-                "bonus.SIEGE_WEAPON": "absolute"
-            },
             "anyOf": {
                 "creature.dreadSkipper" : "absolute"
             }
