@@ -136,7 +136,8 @@
                             }
                         }
                     }
-                }
+                },
+                "cost": 45
             },
             "expert": {
                 "description": "{Expert Deep Frost}\n\nKills 1 creature in the target enemy stack. Survivors are frozen for 3 turns. After the freeze ends, their Attack is reduced by 50% for their first attack.",
@@ -152,7 +153,8 @@
                         }
                     }
                 }
-            }
+            },
+            "cost": 40
         }
     }
 }
